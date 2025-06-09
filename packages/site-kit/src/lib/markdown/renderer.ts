@@ -31,9 +31,9 @@ const theme = createCssVariablesTheme({
 // Hash the contents of this file and its dependencies so that we get a new cache in case we have changed
 // how the markdown is rendered (whose logic live here). This is to avoid serving stale code snippets.
 const hash = createHash('sha256');
-hash.update(fs.readFileSync('../../pnpm-lock.yaml', 'utf-8'));
+hash.update(fs.readFileSync('./pnpm-lock.yaml', 'utf-8'));
 // CAREFUL: update this URL in case you ever move this file or start the dev/build process from another directory
-const original_file = '../../packages/site-kit/src/lib/markdown/renderer.ts';
+const original_file = './packages/site-kit/src/lib/markdown/renderer.ts';
 if (!fs.existsSync(original_file)) {
 	throw new Error(
 		'Update the path to the markdown renderer code. Current value: ' +

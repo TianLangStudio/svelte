@@ -75,7 +75,7 @@ const config: UserConfig = {
 		}
 	},
 	server: {
-		fs: { allow: ['../../packages', '../../../KIT/kit/packages/kit'] },
+		fs: { allow: ['./packages', '../../../KIT/kit/packages/kit'] },
 		// for SvelteKit tutorial
 		headers: {
 			'cross-origin-opener-policy': 'same-origin',

@@ -30,39 +30,6 @@ function format_date(date: string) {
 const now = new Date();
 const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 
-export const blog_posts = index.blog.children
-	.map((post) => {
-		const authors: Array<{ name: string; url: string }> = [];
-
-		if (post.metadata.author) {
-			const names: string[] = post.metadata.author.split(/, ?/);
-			const urls: string[] = post.metadata.authorURL.split(/, ?/);
-
-			if (names.length !== urls.length) {
-				throw new Error(`Mismatched authors and URLs in ${post.file}`);
-			}
-
-			authors.push(...names.map((name, i) => ({ name, url: urls[i] })));
-		}
-
-		const date = post.metadata.date ?? post.file.split('/').pop()!.slice(0, 10);
-
-		return {
-			...post,
-			date,
-			date_formatted: format_date(date),
-			authors,
-			pinned: post.metadata.pinnedUntil ? post.metadata.pinnedUntil > today : false
-		};
-	})
-	.sort((a, b) => {
-		if (!!a.pinned !== !!b.pinned) {
-			return a.pinned ? -1 : 1;
-		}
-
-		return a.date < b.date ? 1 : -1;
-	});
-
 export function remove_section(slug: string) {
 	return slug.replace(/\/[^/]+(\/[^/]+)$/g, '$1');
 }
