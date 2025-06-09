@@ -8,7 +8,7 @@ import { create } from 'sv';
 // This is used by the Svelte REPL as part of the "download project" feature
 
 const force = process.env.FORCE_UPDATE === 'true';
-const output_file = fileURLToPath(new URL('../static/svelte-template.json', import.meta.url));
+const output_file = fileURLToPath(new URL('../../static/svelte-template.json', import.meta.url));
 const output_dir = fileURLToPath(new URL('./svelte-template', import.meta.url));
 
 try {
