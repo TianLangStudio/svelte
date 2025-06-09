@@ -68,9 +68,9 @@
 
 	<button class="raised" class:completed disabled={!exercise.has_solution} onclick={toggle}>
 		{#if completed && exercise.has_solution}
-			reset
+			重置
 		{:else}
-			solve
+	   	解答
 		{/if}
 	</button>
 

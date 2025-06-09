@@ -7,7 +7,7 @@ export const prerender = PRERENDER !== 'false';
 
 const nav_links: NavigationLink[] = [
 	{
-		title: 'Docs',
+		title: '文档',
 		slug: 'docs',
 		sections: [docs.topics['docs/svelte'], docs.topics['docs/kit'], docs.topics['docs/cli']].map(
 			(topic) => ({
@@ -24,7 +24,7 @@ const nav_links: NavigationLink[] = [
 		)
 	},
 	{
-		title: 'Tutorial',
+		title: '教程',
 		slug: 'tutorial',
 		sections: index.tutorial.children.map((topic) => ({
 			title: topic.metadata.title,
@@ -44,10 +44,6 @@ const nav_links: NavigationLink[] = [
 	{
 		title: 'Playground',
 		slug: 'playground'
-	},
-	{
-		title: 'Blog',
-		slug: 'blog'
 	}
 ];
 

@@ -127,7 +127,6 @@
 				parent,
 				type: 'file'
 			};
-
 			show_filetree = true;
 		} else {
 			show_filetree = false;

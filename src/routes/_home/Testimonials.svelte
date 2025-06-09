@@ -2,25 +2,25 @@
 	<p class="definition">
 		<enhanced:img
 			class="pronunciation"
-			alt="Svelte pronunciation guide"
+			alt="Svelte发音 音标"
 			src="./svelte-pronunciation.svg"
 		/>
 
 		<span class="description">
-			<span class="adjective"></span> attractively thin, graceful and stylish
+			<span class="adjective"></span> 苗条迷人, 优雅时尚
 		</span>
 	</p>
 
 	<div class="blurb">
 		<p>
-			Svelte is a UI framework that uses a compiler to let you write breathtakingly concise
-			components that do minimal work in the browser, using languages you already know — HTML, CSS
-			and JavaScript. <strong>It’s a love letter to web development.</strong>
+			Svelte是一个使用编译器让你仍然可以使用HTML，CSS和JavaScript写出极简组件的UI框架
+			<strong>让你不知不觉爱上💕Web开发</strong>
 		</p>
-
 		<p>
-			But don’t take our word for it. Developers consistently rank Svelte as the framework they’re
-			most excited about using.
+			我们不是自夸，请看疗效，请看大家怎么评价的：Svelte已经持续被开发者认为最激动人心的框架
+		</p>
+		<p>
+			<small>翻译如有纰漏敬请谅解 感情有限能力一般如有不同观点以你的为准</small>
 		</p>
 	</div>
 
