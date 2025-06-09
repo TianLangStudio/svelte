@@ -19,5 +19,5 @@
 
 node_modules/
 scripts/create-tutorial-zip/common/node_modules/
-
+/**/node_modules/
 static/
