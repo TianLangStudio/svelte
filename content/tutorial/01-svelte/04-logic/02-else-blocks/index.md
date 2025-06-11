@@ -1,8 +1,9 @@
 ---
-title: Else blocks
+title: Else代码块
 ---
 
-Just like in JavaScript, an `if` block can have an `else` block:
+跟JavaScript一样，`if`也可以有`else`:
+> Just like in JavaScript, an `if` block can have an `else` block:
 
 ```svelte
 /// file: App.svelte
@@ -13,4 +14,6 @@ Just like in JavaScript, an `if` block can have an `else` block:
 {/if}
 ```
 
-`{#...}` opens a block. `{/...}` closes a block. `{:...}` _continues_ a block. Congratulations — you've already learned almost all the syntax Svelte adds to HTML.
+聪明如小主应该不难发现这里的规则：`{#...}`用于开始一个代码块, `{/...}`用于结束代码块, `{:...}`用于继续添加代码块。
+恭喜小主💕至此你已掌握了大部分的大道法则。
+> `{#...}` opens a block. `{/...}` closes a block. `{:...}` _continues_ a block. Congratulations — you've already learned almost all the syntax Svelte adds to HTML.
