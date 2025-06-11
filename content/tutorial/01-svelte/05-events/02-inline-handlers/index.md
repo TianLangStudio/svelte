@@ -1,8 +1,9 @@
 ---
-title: Inline handlers
+title: 内嵌处理函数
 ---
 
-You can also declare event handlers inline:
+小主你还可以直接在标签上定义事件处理函数, 这样就不用消耗您珍贵的脑细胞给函数起名称了.
+> You can also declare event handlers inline:
 
 ```svelte
 /// file: App.svelte

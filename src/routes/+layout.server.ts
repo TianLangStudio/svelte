@@ -6,24 +6,7 @@ import type { BannerData, NavigationLink } from '@sveltejs/site-kit';
 export const prerender = PRERENDER !== 'false';
 
 const nav_links: NavigationLink[] = [
-	{
-		title: '文档',
-		slug: 'docs',
-		sections: [docs.topics['docs/svelte'], docs.topics['docs/kit'], docs.topics['docs/cli']].map(
-			(topic) => ({
-				title: topic.metadata.title,
-				path: '/' + topic.slug, // this will make the UI show a flyout menu for the docs nav entry
-				sections: topic.children.map((section) => ({
-					title: section.metadata.title,
-					sections: section.children.map((page) => ({
-						title: page.metadata.title,
-						path: '/' + page.slug
-					}))
-				}))
-			})
-		)
-	},
-	{
+  {
 		title: '教程',
 		slug: 'tutorial',
 		sections: index.tutorial.children.map((topic) => ({
@@ -40,6 +23,23 @@ const nav_links: NavigationLink[] = [
 				}))
 			}))
 		}))
+	},
+  {
+		title: '文档',
+		slug: 'docs',
+		sections: [docs.topics['docs/svelte'], docs.topics['docs/kit'], docs.topics['docs/cli']].map(
+			(topic) => ({
+				title: topic.metadata.title,
+				path: '/' + topic.slug, // this will make the UI show a flyout menu for the docs nav entry
+				sections: topic.children.map((section) => ({
+					title: section.metadata.title,
+					sections: section.children.map((page) => ({
+						title: page.metadata.title,
+						path: '/' + page.slug
+					}))
+				}))
+			})
+		)
 	},
 	{
 		title: 'Playground',

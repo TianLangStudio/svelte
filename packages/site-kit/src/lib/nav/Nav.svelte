@@ -70,11 +70,11 @@ Top navigation bar for the application. It provides a slot for the left side, th
 	style:z-index={$overlay_open && (search.active || $on_this_page_open) ? 80 : null}
 	aria-label="Primary"
 >
-	<a class="home-link" href="/" title={home_title} aria-label="Svelte"></a>
+	<a class="home-link" href="/" title={home_title} aria-label="Svelte中文"></a>
 
 	{#if title}
 		<div class="current-section mobile">
-			{title}
+			{title}中文
 		</div>
 	{/if}
 

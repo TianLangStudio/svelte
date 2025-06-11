@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="home">
-	<h1 class="visually-hidden">Svelte</h1>
+	<h1 class="visually-hidden">Svelte中文</h1>
 
 	<Hero />
 
