@@ -8,8 +8,8 @@
 
 <div class="hero">
 	<div class="hero-content">
-		<h1>我们大家的Web开发工具中文文档教程翻译</h1>
-		<a href="/docs" class="cta">了解更多 <Icon name="arrow-right" /></a>
+		<h1>小主，终于等到你了! 快解开封印让我助你走上人生巅峰</h1>
+		<a href="/tutorial" class="cta">解封 <Icon name="arrow-right" /></a>
 	</div>
 
 	<picture class="machine">
