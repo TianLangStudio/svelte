@@ -1,8 +1,9 @@
 ---
-title: Adding parameters
+title: 添加参数
 ---
-
-Transition functions can accept parameters. Replace the `fade` transition with `fly`...
+转场函数还可以接受参数。
+把`fade`换成`fly`:
+> Transition functions can accept parameters. Replace the `fade` transition with `fly`...
 
 ```svelte
 /// file: App.svelte
@@ -13,7 +14,8 @@ Transition functions can accept parameters. Replace the `fade` transition with `
 </script>
 ```
 
-...and apply it to the `<p>` along with some options:
+使用`transition`指令把`fly`应用到`<p>`的时候添加些配置信息:
+> ...and apply it to the `<p>` along with some options:
 
 ```svelte
 /// file: App.svelte
@@ -22,4 +24,5 @@ Transition functions can accept parameters. Replace the `fade` transition with `
 </p>
 ```
 
-Note that the transition is _reversible_ — if you toggle the checkbox while the transition is ongoing, it transitions from the current point, rather than the beginning or the end.
+注意转场`transition`是 _可反转_ 的 —— 当你切换复选框的时候如果上一个转场还没有完成，它就会从所在的位置直接返回。
+> Note that the transition is _reversible_ — if you toggle the checkbox while the transition is ongoing, it transitions from the current point, rather than the beginning or the end.
