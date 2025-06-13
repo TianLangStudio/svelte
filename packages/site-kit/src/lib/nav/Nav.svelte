@@ -379,17 +379,6 @@ Top navigation bar for the application. It provides a slot for the left side, th
 				mask: no-repeat 50% 50%;
 				mask-size: calc(100% - 1rem) auto;
 			}
-
-			[data-icon='discord'] {
-				width: 3.4rem;
-				mask-image: url(icons/discord);
-			}
-
-			[data-icon='bluesky'] {
-				width: 3rem;
-				mask-image: url(icons/bluesky);
-			}
-
 			[data-icon='github'] {
 				width: 3rem;
 				mask-image: url(icons/github);

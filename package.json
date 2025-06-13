@@ -5,8 +5,8 @@
 	"description": "The Svelte site",
 	"type": "module",
 	"scripts": {
-		"dev": "node scripts/update.js && node scripts/create-tutorial-zip/index.js && vite dev",
-		"build": "node scripts/update.js && node scripts/create-tutorial-zip/index.js && vite build",
+		"dev": "vite dev",
+		"build": "vite build",
 		"update": "node scripts/update.js --force=true && node scripts/create-tutorial-zip/index.js --force=true",
 		"preview": "vite preview",
 		"start": "node build",
