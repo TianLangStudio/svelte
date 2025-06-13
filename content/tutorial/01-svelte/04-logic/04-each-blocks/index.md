@@ -22,10 +22,9 @@ title: Each代码块
 </div>
 ```
 
-> [!NOTE] 注意这里的表达式 (`colors`) 可以是任何可迭代的对象，也就是像数组的对象, 换句话说只要能用在[`Array.from`]((https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)的都可以。
+> [!NOTE] 注意这里的表达式 (`colors`) 可以是任何可迭代的对象，也就是像数组的对象, 换句话说只要能用在`Array.from`的都可以。
 
-> [!NOTE] The expression (`colors`, in this case) can be any iterable or array-like object — in other words, anything that works with [`Array.from`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
-
+> [!NOTE] The expression (`colors`, in this case) can be any iterable or array-like object — in other words, anything that works with `Array.from`
 现在我们可以把`"red"`换成`color`变量
 > Now we need to use the `color` variable in place of `"red"`:
 
