@@ -1,8 +1,9 @@
 ---
-title: Custom JS transitions
+title: 自定义JS转场
 ---
 
-While you should generally use CSS for transitions as much as possible, there are some effects that can't be achieved without JavaScript, such as a typewriter effect:
+虽然我们尽量推荐小主使用CSS转场，但有些时候还真离不开JavaScript。例如编写一个打字机效果:
+> While you should generally use CSS for transitions as much as possible, there are some effects that can't be achieved without JavaScript, such as a typewriter effect:
 
 ```js
 /// file: App.svelte

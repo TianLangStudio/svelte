@@ -49,6 +49,7 @@ function fade(node, { delay = 0, duration = 400 }) {
 ```
 <!-- prettier-ignore-end -->
 
+当然我们还能再有创意点。让我们做点没什么用的：
 We can get a lot more creative though. Let's make something truly gratuitous:
 
 ```svelte
@@ -78,4 +79,5 @@ We can get a lot more creative though. Let's make something truly gratuitous:
 </script>
 ```
 
-Remember: with great power comes great responsibility.
+小主能力越大责任就越大哦！ 我看好你哦!
+> Remember: with great power comes great responsibility.
