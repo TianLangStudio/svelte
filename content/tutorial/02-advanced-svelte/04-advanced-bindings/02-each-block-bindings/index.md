@@ -1,8 +1,9 @@
 ---
-title: Each block bindings
+title: Each代码块绑定
 ---
 
-You can bind to properties inside an `each` block.
+在`each`代码块中绑定属性：
+> You can bind to properties inside an `each` block.
 
 ```svelte
 /// file: App.svelte
