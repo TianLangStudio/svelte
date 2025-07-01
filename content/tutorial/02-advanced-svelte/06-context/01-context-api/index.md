@@ -1,10 +1,12 @@
 ---
-title: setContext and getContext
+title: setContext和getContext
 ---
 
-The context API provides a mechanism for components to 'talk' to each other without passing around data and functions as props, or dispatching lots of events. It's an advanced feature, but a useful one. In this exercise, we're going to recreate [Schotter](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) by George Nees — one of the pioneers of generative art — using the context API.
-
-Inside `Canvas.svelte`, there's an `addItem` function that adds an item to the canvas. We can make it available to components inside `<Canvas>`, like `<Square>`, with `setContext`:
+小主是否感觉似曾相识，贴心的Svelte也提供了`Context`，用于支持组件间交付，还不需要设置`props`和`事件处理器`哦！   
+接下来就用它重新实现下[Schotter](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/)    
+在`Canvas.svelte`中有个函数`addItem`, 用于往画布上添加东西。我们可以使用`setContext`让`<Canvas>`的子组件, 像`<Square>`, 也可以使用这个函数。
+> The context API provides a mechanism for components to 'talk' to each other without passing around data and functions as props, or dispatching lots of events. It's an advanced feature, but a useful one. In this exercise, we're going to recreate [Schotter](https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) by George Nees — one of the pioneers of generative art — using the context API.
+> Inside `Canvas.svelte`, there's an `addItem` function that adds an item to the canvas. We can make it available to components inside `<Canvas>`, like `<Square>`, with `setContext`:
 
 ```js
 /// file: Canvas.svelte
@@ -26,7 +28,8 @@ function addItem(fn) {
 }
 ```
 
-Inside child components, we can now get the context with, well, `getContext`:
+在子组件中可以使用`getContext`获取上下文对象:   
+> Inside child components, we can now get the context with, well, `getContext`:
 
 ```js
 /// file: Square.svelte
@@ -37,7 +40,8 @@ let { x, y, size, rotate } = $props();
 +++getContext('canvas').addItem(draw);+++
 ```
 
-So far, so... boring. Let's add some randomness to the grid:
+是不觉得挺无聊的，那就给它加点随机的网格：
+> So far, so... boring. Let's add some randomness to the grid:
 
 ```svelte
 /// file: App.svelte
@@ -57,7 +61,10 @@ So far, so... boring. Let's add some randomness to the grid:
 </div>
 ```
 
-`setContext` and `getContext` must be called during component initialisation, so that the context can be correctly bound. The key — `'canvas'` in this case — can be anything you like, including non-strings, which is useful for controlling who can access the context.
+`setContext`和`getContext`需要在组件初始化时执行。 另外键值`convas`, 小主人可以换个你喜欢的。
+> `setContext` and `getContext` must be called during component initialisation, so that the context can be correctly bound. The key — `'canvas'` in this case — can be anything you like, including non-strings, which is useful for controlling who can access the context.
+
+> [!NOTE] 偷偷告诉你：上下文对象里你想放什么就放什么，甚至你可以放个响应式状态：   
 
 > [!NOTE] Your context object can include anything, including reactive state. This allows you to pass values that change over time to child components:
 >

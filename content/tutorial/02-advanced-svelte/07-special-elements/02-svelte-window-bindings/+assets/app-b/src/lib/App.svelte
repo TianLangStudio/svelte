@@ -9,7 +9,6 @@
 <style>
 	:global(body) {
 		height: 400vw;
-		background: url(./deepsea.webp);
 		background-size: cover;
 	}
 

@@ -2,7 +2,8 @@
 title: <svelte:element>
 ---
 
-Sometimes you don't know in advance which element needs to be rendered. Rather than having a long list of `{#if ...}` blocks...
+有时候，有时候，你并不指定具体要渲染哪个元素, 与其写个长长的`{#if...}`：
+> Sometimes you don't know in advance which element needs to be rendered. Rather than having a long list of `{#if ...}` blocks...
 
 ```svelte
 /// file: App.svelte
@@ -13,7 +14,8 @@ Sometimes you don't know in advance which element needs to be rendered. Rather t
 {/if}
 ```
 
-...we can use `<svelte:element>`:
+不如索性来个`<svelte:element>`：
+> ...we can use `<svelte:element>`:
 
 ```svelte
 /// file: App.svelte
@@ -21,5 +23,5 @@ Sometimes you don't know in advance which element needs to be rendered. Rather t
 	I'm a <code>&lt;{selected}&gt;</code> element
 </svelte:element>+++
 ```
-
-The `this` value can be any string, or a falsy value — if it's falsy, no element is rendered.
+`this`的值可以是任意的字符串，如果是个`false`那就不渲染了。
+> The `this` value can be any string, or a falsy value — if it's falsy, no element is rendered.
