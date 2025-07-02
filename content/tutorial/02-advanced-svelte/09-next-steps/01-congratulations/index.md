@@ -1,15 +1,7 @@
 ---
-title: Congratulations!
+title: 恭喜!
 ---
 
-You've now finished the Svelte tutorial and are ready to start building.
-
-The next two parts of the tutorial will focus on SvelteKit, a full-fledged framework for creating apps of all shapes and sizes.
-
-If you're suffering from information overload and aren't ready to go through the SvelteKit tutorial yet, don't worry! You can use your existing Svelte knowledge without learning all of SvelteKit. Just run this in your terminal and follow the prompts...
-
-```bash
-npx sv create
-```
-
-...and start editing `src/routes/+page.svelte`. When you're ready, click the link below to continue your journey.
+恭喜小主！贺喜小主! 已经完成了Svelte心法修炼。   
+马上就能闯荡江湖打下自己的一片天了，想想都好激动！💕   
+要闯荡江湖最好有件趁手的兵器, 贴心的Svelte为您准备了[SvelteKit](https://svelte.docs.tianlang.tech/tutorial/kit/introducing-sveltekit).

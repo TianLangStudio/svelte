@@ -1,5 +1,5 @@
 ---
-title: <script module>
+title: 脚本模块
 scope: { 'prefix': '/src/lib/', 'name': 'src' }
 focus: /src/lib/App.svelte
 ---
