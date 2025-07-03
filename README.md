@@ -4,6 +4,7 @@
 ### Svelte教程
 - [x] 已翻译[Svelte基础](https://svelte.docs.tianlang.tech/tutorial/svelte/welcome-to-svelte)
 - [x] 已翻译[Svelte进阶](https://svelte.docs.tianlang.tech/tutorial/svelte/raw-state)
+- [ ] 翻译中[SvelteKit基础](https://svelte.docs.tianlang.tech/tutorial/kit/introducing-sveltekit)
 
 ## svelte.dev
 
